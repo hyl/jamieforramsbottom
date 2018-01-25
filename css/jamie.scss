@@ -1,0 +1,45 @@
+$brand-primary: #0760ab;
+
+@import "agency";
+
+.navbar-brand {
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.masthead {
+  text-align: left !important;
+
+  .intro-text {
+    text-align: left;
+
+    .intro-heading {
+      background: $brand-primary;
+      display: inline;
+      padding: 10px 20px;
+    }
+
+    .intro-lead-in {
+      background: darken($brand-primary, 20);
+      margin-top: 18px;
+      display: inline-block;
+      padding: 30px 20px;
+    }
+  }
+}
+
+// social buttons
+ul.social-buttons li a {
+  background-color: $brand-primary;
+
+  &:hover {
+    background-color: darken($brand-primary, 20);
+  }
+}
+
+footer {
+  background: grayscale(lighten($brand-primary, 60));
+
+  .social-buttons li a {
+    background-color: grayscale($brand-primary);
+  }
+}
